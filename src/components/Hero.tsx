@@ -131,7 +131,7 @@ export function Hero() {
                     </div>
                     <Highlight
                       code={code}
-                      language={codeLanguage}
+                      language={codeLanguage || 'javascript'}
                       theme={{ plain: {}, styles: [] }}
                     >
                       {({ className, style, tokens, getTokenProps }) => (
