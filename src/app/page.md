@@ -10,7 +10,7 @@ Stop wrestling with unpredictable AI responses. Learn **context engineering** - 
 
 {% quick-link title="Start Here: What is Context Engineering?" icon="lightbulb" href="/docs/what-is-context-engineering" description="Learn the fundamentals in simple terms - no technical background needed." /%}
 
-{% quick-link title="Quick Start for Designers" icon="installation" href="/docs/nocode/foundations" description="Jump right in with practical examples for creative professionals." /%}
+{% quick-link title="Prompting Strategies" icon="installation" href="/docs/prompting-strategies" description="Master every technique from zero-shot to advanced combinations." /%}
 
 {% quick-link title="Mental Models" icon="presets" href="/docs/nocode/mental-models" description="Simple frameworks that help you think about AI interactions." /%}
 
@@ -68,6 +68,9 @@ Ready to transform how you work with AI? Here's your path:
 
 ### 🌱 **Complete Beginner**
 Start with [What is Context Engineering?](/docs/what-is-context-engineering) - written in plain English.
+
+### 🎯 **Want Better Results Right Now**
+Learn [Prompting Strategies](/docs/prompting-strategies) - master the techniques that actually work.
 
 ### 🎨 **Designer or Creative**
 Jump to [Mental Models](/docs/nocode/mental-models) - visual frameworks that make sense.

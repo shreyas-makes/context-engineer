@@ -39,6 +39,18 @@ export const navigation = [
     ],
   },
   {
+    title: 'Prompting Strategies',
+    links: [
+      { title: 'All Strategies Overview', href: '/docs/prompting-strategies' },
+      { title: 'Zero-Shot Prompting', href: '/docs/prompting-strategies/zero-shot' },
+      { title: 'Few-Shot Learning', href: '/docs/prompting-strategies/few-shot' },
+      { title: 'Chain-of-Thought', href: '/docs/prompting-strategies/chain-of-thought' },
+      { title: 'Role-Based Prompting', href: '/docs/prompting-strategies/role-based' },
+      { title: 'Template Strategies', href: '/docs/prompting-strategies/templates' },
+      { title: 'Strategy Combinations', href: '/docs/prompting-strategies/strategy-combinations' },
+    ],
+  },
+  {
     title: 'Core Concepts',
     links: [
       { title: 'Prompt Design Principles', href: '/docs/prompt-design-principles' },
