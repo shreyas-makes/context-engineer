@@ -1,12 +1,12 @@
-# Context Engineer
+# Context Engineering Documentation
 
-> Master advanced context engineering techniques, prompt design patterns, and best practices for building AI-powered applications with **prompts as code**.
+Learn how to get better, more consistent results from AI tools like Claude, ChatGPT, and Cursor through systematic prompting techniques.
 
 🌐 **Live Site**: [contextengineer.cc](https://contextengineer.cc)
 
 ## What is Context Engineering?
 
-Context engineering is the systematic practice of designing, implementing, and managing the context provided to AI systems to achieve reliable, predictable, and high-quality outputs. It's the discipline that transforms AI interactions from unpredictable experiments into engineered solutions.
+Context engineering is the practice of writing clear, structured prompts that help AI understand exactly what you want. Instead of guessing what the AI might produce, you learn to communicate your needs precisely to get reliable results every time.
 
 ## Why Context Engineering Matters
 

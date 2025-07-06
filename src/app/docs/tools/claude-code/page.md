@@ -417,12 +417,136 @@ Provide specific test cases and implementation examples.
 **Impact Assessment:** [Risk tolerance for changes]
 ```
 
+## Advanced Claude Code Setup
+
+### The CLAUDE.md File System
+
+Create a `CLAUDE.md` file in your project root to provide persistent context:
+
+```markdown
+# Project: [Your Project Name]
+
+## Overview
+Brief description of what this project does and its main purpose.
+
+## Tech Stack
+- Frontend: React 18 with TypeScript
+- Backend: Node.js with Express
+- Database: PostgreSQL
+- Deployment: Vercel + Railway
+
+## Development Standards
+- Use TypeScript strict mode
+- Follow ESLint Airbnb config
+- Write tests with Jest + React Testing Library
+- Use semantic commit messages
+
+## Key Patterns
+- Custom hooks for API calls
+- Context API for global state
+- Styled-components for styling
+- Error boundaries for fault tolerance
+
+## Current Focus
+What you're currently working on or main priorities.
+```
+
+### Multi-Agent Workflow
+
+For complex tasks, break them into specialized agents:
+
+```
+**Primary Agent (You):** Overall coordination and final implementation
+**Code Reviewer:** Quality assurance and best practices
+**Performance Optimizer:** Speed and efficiency improvements
+**Security Auditor:** Security vulnerability assessment
+**Documentation Writer:** Clear, beginner-friendly documentation
+```
+
+### MCP Server Integration
+
+Configure Model Context Protocol servers for enhanced capabilities:
+
+```json
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["@upstash/context7"]
+    },
+    "gemini": {
+      "command": "npx",
+      "args": ["mcp-gemini-assistant"]
+    }
+  }
+}
+```
+
+### 3-Tier Documentation Strategy
+
+**Tier 1: Foundation (docs/ai-context/)**
+- Project overview and structure
+- System integration patterns
+- Core development principles
+
+**Tier 2: Component-Specific (component/CLAUDE.md)**
+- Module-specific context
+- API interfaces and patterns
+- Testing strategies
+
+**Tier 3: Task-Specific (dynamic)**
+- Current work context
+- Immediate constraints
+- Success criteria
+
+### Auto-Loading Documentation
+
+Structure your prompts to automatically include relevant context:
+
+```
+Context Loading Priority:
+1. Project CLAUDE.md (always)
+2. Component CLAUDE.md (when working in specific areas)
+3. Task-specific context (current session)
+4. External MCP server data (if configured)
+```
+
+## Core Development Principles
+
+### 1. Documentation-Driven Development
+- Let documentation guide your development decisions
+- Update documentation immediately after changes
+- Trust the auto-loading mechanisms for context
+
+### 2. Systematic Complexity Scaling
+- Start simple and add complexity gradually
+- Use the 3-tier system to organize information
+- Let Claude Code handle context management
+
+### 3. Multi-Agent Collaboration
+- Assign specific roles to different prompts
+- Use specialized agents for different aspects
+- Coordinate between agents for complex tasks
+
+### 4. Context Persistence
+- Use CLAUDE.md files for lasting project knowledge
+- Structure information hierarchically
+- Maintain clear separation between different context levels
+
+## Quick Start Workflow
+
+1. **Create CLAUDE.md** with your project basics
+2. **Set up MCP servers** if using external AI services
+3. **Structure your documentation** using the 3-tier system
+4. **Start with simple requests** and build complexity
+5. **Use specialized agents** for different types of work
+
 ## Next Steps
 
-1. **Choose a system prompt** that matches your development style
-2. **Try it on your current project** and compare results
-3. **Customize the template** to fit your specific tech stack
-4. **Build your own library** of effective prompts for different scenarios
-5. **Share with your team** for consistent results
+1. **Create your CLAUDE.md file** with project context
+2. **Try the 3-tier documentation approach** on your current project
+3. **Experiment with multi-agent workflows** for complex tasks
+4. **Set up MCP servers** for enhanced capabilities
+5. **Build your documentation system** incrementally
 
-Remember: Claude Code is like having a senior developer on your team. The better you communicate your needs, the better help you'll get. These patterns will help you get professional-grade assistance every time.
+Remember: Claude Code becomes more powerful when you treat it as an orchestrated development environment. The key is systematic organization of context and clear communication of your development goals.
