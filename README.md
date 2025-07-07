@@ -1,76 +1,47 @@
-# Context Engineering Documentation
+# Context Engineering Handbook
 
-Learn how to get better, more consistent results from AI tools like Claude, ChatGPT, and Cursor through systematic prompting techniques.
-
-🌐 **Live Site**: [contextengineer.cc](https://contextengineer.cc)
+A practical guide for developers to get consistent, reliable results from AI tools through systematic prompting.
 
 ## What is Context Engineering?
 
-Context engineering is the practice of writing clear, structured prompts that help AI understand exactly what you want. Instead of guessing what the AI might produce, you learn to communicate your needs precisely to get reliable results every time.
+Context engineering is the practice of structuring prompts to communicate clearly with AI systems. It turns unpredictable AI interactions into reliable tools you can depend on.
 
-## Why Context Engineering Matters
+## Core Concepts
 
-As AI systems become central to business operations, the need for predictable, reliable AI behavior has never been more critical. Context engineering addresses:
+### Prompt Structure
+Every effective prompt has these elements:
+- **Task**: What you want the AI to do
+- **Context**: Background information the AI needs
+- **Format**: How you want the output structured
+- **Constraints**: What to avoid or include
 
-- **Consistency**: Ensuring AI outputs remain stable across different inputs and scenarios
-- **Reliability**: Building AI systems that perform predictably in production environments
-- **Scalability**: Creating prompt systems that work across teams and applications
-- **Maintainability**: Managing AI interactions as code with proper versioning and testing
+### Context Management
+- Provide relevant background information
+- Set clear boundaries for the task
+- Give examples when helpful
+- Specify the desired output format
 
-## Core Principles
+### Consistency Techniques
+- Use templates for repeated tasks
+- Maintain consistent terminology
+- Apply the same structure across similar prompts
+- Document what works for your use cases
 
-### 🎯 **Systematic Approach**
-Move beyond trial-and-error prompting to structured methodologies that scale with your applications and team.
+## Documentation Structure
 
-### 🔧 **Prompts as Code**
-Treat prompts as first-class code artifacts with version control, testing, and deployment pipelines.
+This handbook covers:
 
-### 📊 **Testing & Evaluation**
-Implement comprehensive testing strategies for prompt reliability and performance optimization.
-
-### 🚀 **Production Ready**
-Build AI applications with enterprise-grade prompt management, monitoring, and deployment practices.
-
-## Key Topics Covered
-
-### **Foundation**
-- **Prompt Design Principles**: Core guidelines for effective prompt construction
-- **Context Management**: Organizing and structuring information for optimal AI comprehension
-- **Structured Prompting**: Systematic approaches to prompt architecture
-
-### **Advanced Techniques**
-- **Chain of Thought**: Step-by-step reasoning methodologies
-- **Few-Shot Learning**: Learning from examples and pattern recognition
-- **Prompt Chaining**: Connecting multiple prompts for complex workflows
-- **Dynamic Context Assembly**: Building context programmatically
-- **Multi-Modal Prompting**: Working with text, images, and other modalities
-
-### **Enterprise Practices**
-- **Prompt Templates**: Reusable, maintainable prompt structures
-- **Prompt Testing**: Validation and quality assurance methodologies
-- **Prompt Versioning**: Managing prompt evolution and deployment
-- **Prompt Optimization**: Performance tuning and cost optimization
-- **Integration Patterns**: Connecting prompts with applications and systems
-
-### **Specialized Applications**
-- **Retrieval-Augmented Generation**: Integrating external knowledge sources
-- **Tool-Assisted Prompting**: Leveraging external tools and APIs
-- **Security & Safety**: Protecting against prompt injection and misuse
-- **Performance Optimization**: Optimizing for speed, cost, and quality
-
-## The Context Engineering Methodology
-
-Context engineering encompasses four key areas:
-
-1. **Prompt Design**: Crafting effective prompts that communicate intent clearly and consistently
-2. **Context Management**: Organizing and structuring information for optimal AI comprehension
-3. **Prompt Orchestration**: Chaining and coordinating multiple prompts for complex workflows
-4. **Quality Assurance**: Testing, evaluating, and optimizing prompt performance in production
+1. **Foundations** - Basic principles and concepts
+2. **Techniques** - Specific methods for different scenarios
+3. **Templates** - Reusable patterns for common tasks
+4. **Examples** - Real-world applications
+5. **Tools** - How to use context engineering with specific AI tools
 
 ## Getting Started
 
-Visit [contextengineer.cc](https://contextengineer.cc) to explore comprehensive guides, patterns, and best practices for implementing context engineering in your AI applications.
+1. Read the foundational concepts
+2. Try the basic templates
+3. Apply techniques to your specific use case
+4. Build your own template library
 
----
-
-**Context Engineer** - Transform AI interactions from experiments into engineered solutions.
+Visit the live documentation at [contextengineer.cc](https://contextengineer.cc) for detailed guides and examples.

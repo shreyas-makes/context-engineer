@@ -1,86 +1,47 @@
 ---
-title: Context Engineering - Get Better AI Results Every Time
+title: Context Engineering Handbook
 ---
 
-# Get Better AI Results Every Time
+# Context Engineering Handbook
 
-Stop wrestling with unpredictable AI responses. Learn **context engineering** - the systematic approach to working with AI tools like Claude, ChatGPT, and Cursor that gets you consistent, high-quality results.
+A practical guide for developers to get consistent, reliable results from AI tools through systematic prompting.
 
 {% quick-links %}
 
-{% quick-link title="Start Here: What is Context Engineering?" icon="lightbulb" href="/docs/what-is-context-engineering" description="Learn the fundamentals in simple terms - no technical background needed." /%}
+{% quick-link title="What is Context Engineering?" icon="lightbulb" href="/docs/what-is-context-engineering" description="Learn the core concepts and principles." /%}
 
-{% quick-link title="Prompting Strategies" icon="installation" href="/docs/prompting-strategies" description="Master every technique from zero-shot to advanced combinations." /%}
+{% quick-link title="Prompting Strategies" icon="installation" href="/docs/prompting-strategies" description="Essential techniques for effective prompts." /%}
 
-{% quick-link title="Mental Models" icon="presets" href="/docs/nocode/mental-models" description="Simple frameworks that help you think about AI interactions." /%}
+{% quick-link title="Templates" icon="presets" href="/docs/templates" description="Reusable patterns for common tasks." /%}
 
-{% quick-link title="Practical Examples" icon="plugins" href="/docs/examples" description="Real-world scenarios you can use immediately." /%}
+{% quick-link title="Examples" icon="plugins" href="/docs/examples" description="Real-world applications and use cases." /%}
 
 {% /quick-links %}
 
-## Think of AI as Your Super-Smart Assistant
+## Core Principles
 
-Imagine you're working with the most brilliant assistant ever hired. They can do almost anything, but they need clear instructions to do their best work.
+### Clear Communication
+AI tools work best when you communicate your needs clearly and specifically.
 
-**Without Context Engineering:**
-- You: "Write me something good"
-- AI: *Writes something random and unhelpful*
-- You: *Frustrated, tries again with different words*
+### Structured Approach
+Use consistent patterns and templates for predictable results.
 
-**With Context Engineering:**
-- You: "Write a professional email to decline a client project, keeping the relationship positive for future opportunities"
-- AI: *Writes exactly what you need*
-- You: *Gets great results consistently*
+### Context Management
+Provide the right amount of background information for each task.
 
-## Context Engineering is Like Having a Recipe
+### Iterative Improvement
+Refine your prompts based on results and build a library of effective patterns.
 
-Just like cooking, the better your ingredients and instructions, the better your results.
+## Getting Started
 
-### 🥘 **The Recipe Analogy**
-- **Traditional Approach**: "Make something tasty" → Random results
-- **Context Engineering**: Detailed recipe with ingredients, steps, and timing → Consistent success
+1. **Start with Basics** - Learn the fundamental concepts
+2. **Try Templates** - Use proven patterns for common tasks
+3. **Practice Techniques** - Apply different strategies to your work
+4. **Build Your Library** - Create reusable prompts for your specific needs
 
-### 🎯 **Who This Helps**
-- **Designers**: Get better creative briefs, copy, and feedback
-- **Founders**: Create compelling content, strategies, and communications
-- **Managers**: Improve team communications and project planning
-- **Content Creators**: Generate consistent, on-brand content
+## Who This Helps
 
-## The Magic is in the System
-
-Context engineering isn't about being technical - it's about being systematic:
-
-### 1. **Be Specific About What You Want**
-Instead of "help me with marketing," try "create three social media posts for a sustainable fashion brand targeting eco-conscious millennials."
-
-### 2. **Give Context About Your Situation**
-"I'm launching a new product next month and need to build awareness among potential customers who care about environmental impact."
-
-### 3. **Provide Examples of What Good Looks Like**
-"Here's a social media post that performed well for us: [example]. Create similar posts that maintain this tone and style."
-
-### 4. **Set Clear Constraints**
-"Each post should be under 280 characters, include a call-to-action, and avoid industry jargon."
-
-## Start Your Journey
-
-Ready to transform how you work with AI? Here's your path:
-
-### 🌱 **Complete Beginner**
-Start with [What is Context Engineering?](/docs/what-is-context-engineering) - written in plain English.
-
-### 🎯 **Want Better Results Right Now**
-Learn [Prompting Strategies](/docs/prompting-strategies) - master the techniques that actually work.
-
-### 🎨 **Designer or Creative**
-Jump to [Mental Models](/docs/nocode/mental-models) - visual frameworks that make sense.
-
-### 🚀 **Founder or Manager**
-Begin with [Practical Examples](/docs/examples) - real scenarios you can use today.
-
-### 🔧 **Ready to Go Deeper**
-Explore [Templates](/docs/templates) - reusable patterns for common tasks.
-
----
-
-**The bottom line**: Context engineering makes AI tools like Claude Code and Cursor work better for you, not against you. No coding required - just better thinking about how to communicate with AI.
+- **Developers** working with AI coding assistants
+- **Content creators** needing consistent output
+- **Teams** wanting standardized AI interactions
+- **Anyone** seeking reliable AI results

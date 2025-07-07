@@ -4,426 +4,163 @@ title: Context Engineering with Claude Code
 
 # Context Engineering with Claude Code
 
-Claude Code is incredibly powerful, but like any tool, it works best when you know how to communicate with it effectively. Here's how to get professional-grade results every time.
+Claude Code works best when you communicate your needs clearly and systematically. Here's how to get consistent, professional results.
 
-## Quick Start: Your First Perfect Claude Code Session
+## Basic Structure for Claude Code Sessions
 
-### The Claude Code Formula
-```
-**Project Context:** [What you're building and why]
-**Current State:** [Where you are now]
-**Goal:** [What you want to achieve]
-**Constraints:** [Limitations and requirements]
-**Style Preferences:** [How you like to work]
-**Next Steps:** [What should happen after]
-```
+Every effective Claude Code session should include:
 
-## Essential System Prompts for Claude Code
+**Project Context:** What you're building and why
+**Current State:** Where you are now
+**Goal:** What you want to achieve
+**Constraints:** Limitations and requirements
+**Style Preferences:** How you like to work
+**Next Steps:** What should happen after
 
-### 1. The Senior Developer Partner
+## Essential Role Prompts
 
-Perfect for most coding sessions:
+### The Senior Developer Partner
+For most coding sessions:
 
-```
-You are a Senior Software Engineer working as my pair programming partner in Claude Code. Your expertise includes:
-- Modern development practices and clean code principles
-- Full-stack development across multiple languages and frameworks
-- Code architecture, design patterns, and best practices
-- Testing, debugging, and performance optimization
-- Developer tooling and workflow efficiency
+"You are a Senior Software Engineer working as my pair programming partner. Focus on:
+- Understanding the project context and existing patterns
+- Writing clean, maintainable code
+- Explaining technical decisions clearly
+- Suggesting improvements and optimizations
+- Considering security, performance, and scalability
 
-Your approach:
-1. Always understand the project context and existing codebase patterns
-2. Write clean, maintainable, well-documented code
-3. Explain technical decisions and trade-offs clearly
-4. Suggest improvements and optimizations
-5. Consider security, performance, and scalability
+Always ask clarifying questions about requirements and constraints."
 
-When helping with code:
-- Ask clarifying questions about requirements and constraints
-- Follow existing code conventions and patterns
-- Provide step-by-step explanations for complex changes
-- Suggest testing approaches for new functionality
-- Anticipate potential issues and edge cases
+### The Code Reviewer
+For reviewing and improving existing code:
 
-Focus on writing code that is not just functional, but professional, maintainable, and follows industry best practices.
-```
-
-### 2. The Code Reviewer
-
-Great for reviewing and improving existing code:
-
-```
-You are an experienced Senior Code Reviewer and Technical Lead with expertise in:
+"You are an experienced Code Reviewer focused on:
 - Code quality assessment and improvement
 - Security vulnerability identification
-- Performance optimization and bottleneck analysis
+- Performance optimization
 - Architecture review and refactoring recommendations
-- Best practice enforcement and mentoring
 
-Your review process:
-1. Analyze code structure, readability, and maintainability
-2. Identify potential bugs, security issues, or performance problems
-3. Suggest specific improvements with clear explanations
-4. Recommend refactoring opportunities when beneficial
-5. Provide guidance on testing and documentation needs
+Analyze code structure, identify potential issues, and suggest specific improvements with clear explanations."
 
-When reviewing code:
-- Point out both strengths and areas for improvement
-- Explain the reasoning behind each suggestion
-- Prioritize recommendations by impact and effort
-- Consider the broader codebase context and patterns
-- Suggest incremental improvements for large changes
-
-Always balance code quality with practical constraints like deadlines and team expertise.
-```
-
-### 3. The Technical Architect
-
+### The Technical Architect
 For system design and architectural decisions:
 
-```
-You are a Senior Technical Architect specializing in:
+"You are a Senior Technical Architect specializing in:
 - System design and software architecture
-- Technology stack selection and integration
+- Technology stack selection
 - Scalability and performance planning
-- Security architecture and best practices
-- Technical decision-making and trade-off analysis
+- Security architecture
 
-Your architectural approach:
-1. Understand business requirements and technical constraints
-2. Design scalable, maintainable system architectures
-3. Consider current and future requirements
-4. Evaluate technology options and trade-offs
-5. Plan for security, performance, and maintainability
+Focus on creating robust, scalable solutions that align with business needs and team capabilities."
 
-When working on architecture:
-- Ask about scale, growth expectations, and constraints
-- Consider multiple architectural approaches
-- Explain trade-offs between different solutions
-- Recommend specific technologies with rationale
-- Plan for testing, monitoring, and deployment
-
-Focus on creating robust, scalable solutions that align with business needs and team capabilities.
-```
-
-## Real Examples for Claude Code
+## Practical Examples
 
 ### Example 1: Starting a New Feature
 
-**❌ Vague Request:**
+**Vague Request:**
 "Help me build a user authentication system"
 
-**✅ Context-Engineered Request:**
-```
-I need to build a user authentication system for a React/Node.js application.
+**Context-Engineered Request:**
+"I need to build a user authentication system for a React/Node.js task management app. 
 
-**Project Context:**
-- Building a task management SaaS app
-- Currently using React frontend with Express.js backend
-- MongoDB for data storage, considering JWT for tokens
-- Team of 3 developers, mix of junior and senior
-
-**Current State:**
-- Basic app structure is in place
-- User registration form exists but not connected
-- No authentication middleware yet
-- Using Axios for API calls
-
-**Requirements:**
-- Email/password authentication
-- Password reset functionality
-- JWT token-based sessions
-- Role-based access (admin, user)
-- Secure password storage with bcrypt
-
-**Constraints:**
-- Must integrate with existing React Router setup
-- Need to be production-ready for security
-- Should follow our current API pattern (/api/v1/...)
-- Budget allows for 3rd party services if needed
-
-**Style Preferences:**
-- TypeScript for type safety
-- Functional components with hooks
-- Clear error handling and user feedback
-- Comprehensive inline documentation
-
-**Next Steps:**
-- Implement backend authentication routes first
-- Add frontend login/register components
-- Test with Postman before frontend integration
-- Deploy to staging for security testing
-```
+**Project Context:** Currently using React frontend with Express.js backend and MongoDB
+**Current State:** Basic app structure exists, user registration form is built but not connected
+**Goal:** Email/password authentication with JWT tokens and role-based access
+**Constraints:** Must integrate with existing React Router setup and be production-ready
+**Style Preferences:** TypeScript, functional components, clear error handling
+**Next Steps:** Implement backend routes first, then frontend components"
 
 ### Example 2: Debugging Performance Issues
 
-**❌ Vague Request:**
+**Vague Request:**
 "My app is slow, can you help?"
 
-**✅ Context-Engineered Request:**
-```
-I'm experiencing performance issues in my React application and need help identifying and fixing bottlenecks.
+**Context-Engineered Request:**
+"I'm experiencing performance issues in my React e-commerce app and need help identifying bottlenecks.
 
-**Project Context:**
-- E-commerce React app with 50+ components
-- Using Redux for state management
-- Backend API built with Node.js/Express
-- Deployed on Vercel with Postgres database
-
-**Current Performance Issues:**
-- Initial page load takes 4-6 seconds
-- Product listing page becomes sluggish with 100+ items
-- Search functionality has 2-3 second delays
-- Mobile performance is significantly worse
-
-**What I've Tried:**
-- Basic React DevTools profiling
-- Checked network tab for slow API calls
-- Added React.memo to some components
-- Enabled production build optimizations
-
-**Technical Details:**
-- Bundle size is currently 1.2MB
-- Using Create React App (not ejected)
-- API responses average 200-500ms
-- No current caching strategy
-
-**Goals:**
-- Reduce initial load time to under 2 seconds
-- Smooth scrolling on product listings
-- Instant search results (< 500ms)
-- Better mobile performance
-
-**Analysis Needed:**
-1. Bundle size optimization opportunities
-2. Component re-render identification
-3. API call optimization strategies
-4. Caching implementation recommendations
-5. Code splitting opportunities
-
-Please help me systematically identify and address these performance bottlenecks.
-```
+**Project Context:** 50+ components using Redux, deployed on Vercel with Postgres
+**Current Issues:** 4-6 second initial load, sluggish product listing, 2-3 second search delays
+**What I've Tried:** React DevTools profiling, checked network tab, added React.memo
+**Technical Details:** 1.2MB bundle size, Create React App, no caching strategy
+**Goals:** Under 2 second load time, smooth scrolling, instant search
+**Analysis Needed:** Bundle optimization, component re-renders, API optimization, caching"
 
 ### Example 3: Code Refactoring
 
-**❌ Vague Request:**
+**Vague Request:**
 "Clean up this messy code"
 
-**✅ Context-Engineered Request:**
-```
-I need help refactoring a React component that has grown complex and difficult to maintain.
+**Context-Engineered Request:**
+"I need help refactoring a React UserProfile component that has grown complex and difficult to maintain.
 
-**Component Context:**
-- UserProfile component handling user data display and editing
-- Currently 300+ lines with mixed concerns
-- Handles API calls, form validation, and UI rendering
-- Used in 3 different parts of the app with slight variations
-
-**Current Issues:**
-- Difficult to test due to mixed concerns
-- Props drilling through multiple levels
-- Inconsistent error handling
-- Duplicate validation logic
-- Hard to understand control flow
-
-**Existing Code Patterns:**
-- Using TypeScript with strict mode
-- Custom hooks for API calls (useApi pattern)
-- Styled-components for styling
-- React Hook Form for form management
-- Context for theme and auth state
-
-**Refactoring Goals:**
-- Separate concerns into logical components
-- Extract reusable logic into custom hooks
-- Improve testability with better separation
-- Maintain existing functionality exactly
-- Follow existing project patterns
-
-**Constraints:**
-- Cannot change external API contracts
-- Must maintain TypeScript strict compliance
-- Should not break existing tests
-- Keep bundle size impact minimal
-
-**Preferred Approach:**
-1. Break down into smaller, focused components
-2. Extract business logic into custom hooks
-3. Create reusable validation schemas
-4. Improve error boundary implementation
-5. Add comprehensive unit tests
-
-Please help me create a clean, maintainable architecture while preserving all current functionality.
-```
+**Component Context:** 300+ lines handling user data display, editing, API calls, and form validation
+**Current Issues:** Mixed concerns, props drilling, inconsistent error handling, duplicate validation
+**Existing Patterns:** TypeScript strict mode, custom hooks, styled-components, React Hook Form
+**Refactoring Goals:** Separate concerns, extract reusable logic, improve testability
+**Constraints:** Cannot change API contracts, must maintain TypeScript compliance
+**Preferred Approach:** Break into smaller components, extract business logic to hooks"
 
 ## Claude Code Best Practices
 
 ### 1. Always Provide Project Context
-
-**Include:**
 - Technology stack and versions
 - Project structure and patterns
 - Team size and skill levels
 - Deployment environment
 - Performance requirements
 
-**Example:**
-```
-**Tech Stack:** React 18, TypeScript, Node.js 16, PostgreSQL
-**Patterns:** Custom hooks, Context API, REST APIs
-**Team:** 3 developers (1 senior, 2 junior)
-**Environment:** AWS with CI/CD pipeline
-**Scale:** 10K+ daily active users
-```
-
 ### 2. Be Specific About Code Style
-
-**Include:**
 - Coding conventions you follow
 - Preferred libraries and frameworks
 - Documentation standards
 - Testing approaches
 
-**Example:**
-```
-**Code Style:** 
-- TypeScript strict mode
-- Functional components with hooks
-- ESLint with Airbnb config
-- Jest + React Testing Library
-- Inline JSDoc for complex functions
-```
-
 ### 3. Explain Your Current Situation
-
-**Include:**
 - What's working well
 - Specific problems you're facing
 - What you've already tried
 - Error messages or symptoms
 
-**Example:**
-```
-**Current State:**
-- Authentication works for login
-- Having issues with token refresh
-- Getting 401 errors after 1 hour
-- Tried localStorage and sessionStorage
-- Error: "Token expired" in console
-```
-
 ### 4. Set Clear Goals and Constraints
-
-**Include:**
 - What success looks like
 - Performance requirements
 - Security considerations
 - Timeline constraints
 - Budget limitations
 
-**Example:**
-```
-**Goals:** 
-- Sub-100ms API response times
-- Mobile-first responsive design
-- WCAG 2.1 AA accessibility compliance
-- Deploy-ready by end of sprint
-
-**Constraints:**
-- Must work with existing database schema
-- No breaking changes to public API
-- Budget for 1-2 new dependencies max
-```
-
-## Advanced Claude Code Techniques
-
-### 1. Multi-Step Development
-
-For complex features, break them into phases:
-
-```
-Phase 1: Core functionality implementation
-Phase 2: Error handling and edge cases
-Phase 3: Testing and documentation
-Phase 4: Performance optimization
-Phase 5: Security review and hardening
-
-Let's start with Phase 1 and work through each step systematically.
-```
-
-### 2. Code Review Workflow
-
-Use Claude Code as your review partner:
-
-```
-Please review this code as a senior developer would:
-
-1. Code quality and maintainability
-2. Potential bugs or edge cases
-3. Security considerations
-4. Performance implications
-5. Suggestions for improvement
-
-Focus on actionable feedback that improves the codebase.
-```
-
-### 3. Testing Strategy
-
-Get help with comprehensive testing:
-
-```
-Help me create a testing strategy for this component:
-
-1. Unit tests for core functionality
-2. Integration tests for API interactions
-3. E2E tests for critical user flows
-4. Performance tests for load handling
-5. Accessibility tests for compliance
-
-Provide specific test cases and implementation examples.
-```
-
-## Common Claude Code Patterns
+## Common Request Patterns
 
 ### For Bug Fixes
-```
-**Bug Report:** [Specific error or behavior]
-**Expected Behavior:** [What should happen]
-**Current Behavior:** [What actually happens]
-**Error Messages:** [Exact error text]
-**Steps to Reproduce:** [How to trigger the issue]
-**Environment:** [Browser, OS, versions]
-**Code Context:** [Relevant file/function]
-```
+- **Bug Report:** Specific error or behavior
+- **Expected Behavior:** What should happen
+- **Current Behavior:** What actually happens
+- **Error Messages:** Exact error text
+- **Steps to Reproduce:** How to trigger the issue
+- **Environment:** Browser, OS, versions
+- **Code Context:** Relevant file/function
 
 ### For New Features
-```
-**Feature Description:** [What you're building]
-**User Story:** [Why this feature is needed]
-**Acceptance Criteria:** [Definition of done]
-**Technical Requirements:** [Performance, security, etc.]
-**Integration Points:** [How it connects to existing code]
-**Testing Strategy:** [How you'll verify it works]
-```
+- **Feature Description:** What you're building
+- **User Story:** Why this feature is needed
+- **Acceptance Criteria:** Definition of done
+- **Technical Requirements:** Performance, security, etc.
+- **Integration Points:** How it connects to existing code
+- **Testing Strategy:** How you'll verify it works
 
 ### For Optimization
-```
-**Performance Issue:** [Specific slowness or bottleneck]
-**Current Metrics:** [Response times, bundle sizes, etc.]
-**Target Metrics:** [What you want to achieve]
-**Constraints:** [What you can't change]
-**Tools Available:** [Profiling, monitoring, etc.]
-**Impact Assessment:** [Risk tolerance for changes]
-```
+- **Performance Issue:** Specific slowness or bottleneck
+- **Current Metrics:** Response times, bundle sizes, etc.
+- **Target Metrics:** What you want to achieve
+- **Constraints:** What you can't change
+- **Tools Available:** Profiling, monitoring, etc.
+- **Impact Assessment:** Risk tolerance for changes
 
-## Advanced Claude Code Setup
-
-### The CLAUDE.md File System
+## Project Context File
 
 Create a `CLAUDE.md` file in your project root to provide persistent context:
 
-```markdown
+### Basic Template
+```
 # Project: [Your Project Name]
 
 ## Overview
@@ -451,102 +188,24 @@ Brief description of what this project does and its main purpose.
 What you're currently working on or main priorities.
 ```
 
-### Multi-Agent Workflow
+## Documentation Strategy
 
-For complex tasks, break them into specialized agents:
+### Three Levels of Context
+1. **Project-Level** - Overall project context (CLAUDE.md)
+2. **Component-Level** - Module-specific context
+3. **Task-Level** - Current session context
 
-```
-**Primary Agent (You):** Overall coordination and final implementation
-**Code Reviewer:** Quality assurance and best practices
-**Performance Optimizer:** Speed and efficiency improvements
-**Security Auditor:** Security vulnerability assessment
-**Documentation Writer:** Clear, beginner-friendly documentation
-```
+### Core Principles
+- **Documentation-Driven Development** - Let documentation guide decisions
+- **Systematic Complexity Scaling** - Start simple, add complexity gradually
+- **Context Persistence** - Use files for lasting project knowledge
+- **Clear Communication** - Organize information hierarchically
 
-### MCP Server Integration
+## Getting Started
 
-Configure Model Context Protocol servers for enhanced capabilities:
+1. Create your CLAUDE.md file with project basics
+2. Structure your documentation using the three-level system
+3. Start with simple requests and build complexity
+4. Build your documentation system incrementally
 
-```json
-{
-  "mcpServers": {
-    "context7": {
-      "command": "npx",
-      "args": ["@upstash/context7"]
-    },
-    "gemini": {
-      "command": "npx",
-      "args": ["mcp-gemini-assistant"]
-    }
-  }
-}
-```
-
-### 3-Tier Documentation Strategy
-
-**Tier 1: Foundation (docs/ai-context/)**
-- Project overview and structure
-- System integration patterns
-- Core development principles
-
-**Tier 2: Component-Specific (component/CLAUDE.md)**
-- Module-specific context
-- API interfaces and patterns
-- Testing strategies
-
-**Tier 3: Task-Specific (dynamic)**
-- Current work context
-- Immediate constraints
-- Success criteria
-
-### Auto-Loading Documentation
-
-Structure your prompts to automatically include relevant context:
-
-```
-Context Loading Priority:
-1. Project CLAUDE.md (always)
-2. Component CLAUDE.md (when working in specific areas)
-3. Task-specific context (current session)
-4. External MCP server data (if configured)
-```
-
-## Core Development Principles
-
-### 1. Documentation-Driven Development
-- Let documentation guide your development decisions
-- Update documentation immediately after changes
-- Trust the auto-loading mechanisms for context
-
-### 2. Systematic Complexity Scaling
-- Start simple and add complexity gradually
-- Use the 3-tier system to organize information
-- Let Claude Code handle context management
-
-### 3. Multi-Agent Collaboration
-- Assign specific roles to different prompts
-- Use specialized agents for different aspects
-- Coordinate between agents for complex tasks
-
-### 4. Context Persistence
-- Use CLAUDE.md files for lasting project knowledge
-- Structure information hierarchically
-- Maintain clear separation between different context levels
-
-## Quick Start Workflow
-
-1. **Create CLAUDE.md** with your project basics
-2. **Set up MCP servers** if using external AI services
-3. **Structure your documentation** using the 3-tier system
-4. **Start with simple requests** and build complexity
-5. **Use specialized agents** for different types of work
-
-## Next Steps
-
-1. **Create your CLAUDE.md file** with project context
-2. **Try the 3-tier documentation approach** on your current project
-3. **Experiment with multi-agent workflows** for complex tasks
-4. **Set up MCP servers** for enhanced capabilities
-5. **Build your documentation system** incrementally
-
-Remember: Claude Code becomes more powerful when you treat it as an orchestrated development environment. The key is systematic organization of context and clear communication of your development goals.
+Remember: Claude Code works best when you provide systematic context and clear communication of your development goals.
